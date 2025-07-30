@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000" />
+    <title>Pong Game</title>
+    <style>
+        * {
+            cursor: default;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            background-color: #111;
+            color: #ccc;
+        }
+        #canvasGame {
+            background-color: #444;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 5px #e7e7e754;
+            border-radius: 2px;
+        }
+        .scoreboard {
+            font-weight: 600;
+            font-size: 2rem;
+            font-family: monospace;
+        }
+        #restart {
+            border: none;
+            padding: 1rem;
+            background-color: #444;
+            color: #ccc;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pong Game</h1>
+        <div class="scoreboard">
+            <span id="RScore" style="color: #f55">00</span>:<span id="BScore" style="color: #55f">00</span>
+        </div>
+        <canvas id="canvasGame" height="400px" width="1000px"></canvas>
+        <button id="restart">Restart</button>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
