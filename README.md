@@ -8,4 +8,4 @@ Este é um remake do clássico **Pong**. Fundamentalmente, a idéia é simplesme
 ## ⚙️ - Configurações
 O projeto utiliza Node.js/Express, crie um arquivo .env com ```PORT=3000``` (ou sua porta de preferência) e rode `node server.js` para iniciar o servidor.
 
-> Divirta-se
+> Sinta-se livre para modificar, usar e contribuir!
